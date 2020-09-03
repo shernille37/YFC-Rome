@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 3px;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.showCaseImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.desc {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.desc h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 7rem;
+  text-shadow: 4px 4px black;
+}
+
+.desc p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  text-shadow: 3px 3px black;
+}
+
+@media (max-width: 675px) {
+  .desc {
+    top: 150px;
+  }
+  .desc h1 {
+    font-size: 4rem;
+  }
+}
