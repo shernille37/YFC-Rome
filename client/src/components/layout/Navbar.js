@@ -61,7 +61,7 @@ const Navbar = () => {
             href='#responsive-header'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'
           >
-            Blog
+            Contacts
           </a>
         </div>
       </div>

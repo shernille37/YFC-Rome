@@ -10071,6 +10071,14 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-exo {
+  font-family: "Exo 2";
+}
+
+.font-allerta {
+  font-family: "Allerta Stencil";
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -28138,6 +28146,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-exo {
+    font-family: "Exo 2";
+  }
+
+  .sm\:font-allerta {
+    font-family: "Allerta Stencil";
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -46173,6 +46189,14 @@ video {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-exo {
+    font-family: "Exo 2";
+  }
+
+  .md\:font-allerta {
+    font-family: "Allerta Stencil";
   }
 
   .md\:font-hairline {
@@ -64212,6 +64236,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-exo {
+    font-family: "Exo 2";
+  }
+
+  .lg\:font-allerta {
+    font-family: "Allerta Stencil";
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -82247,6 +82279,14 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-exo {
+    font-family: "Exo 2";
+  }
+
+  .xl\:font-allerta {
+    font-family: "Allerta Stencil";
   }
 
   .xl\:font-hairline {

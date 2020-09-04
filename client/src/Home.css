@@ -1,0 +1,267 @@
+.showcase {
+  position: relative;
+  height: 100vh;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.showCaseImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.desc {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.desc h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 7rem;
+  text-shadow: 4px 4px black;
+}
+
+.desc p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  text-shadow: 3px 3px black;
+}
+
+/* Article */
+
+section {
+  background: url('./assets//Images/white-bg.jpeg');
+  color: black;
+}
+
+.pimg,
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg {
+  min-height: 500px;
+  background-image: url('../src/assets/Images/png1.jpeg');
+}
+
+.four {
+  text-decoration: underline overline;
+}
+
+.pimg div {
+  text-shadow: 3px 3px black;
+}
+
+.pimg .about {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9),
+    #5c4c55,
+    #b4b4b0,
+    #af9a9a
+  );
+  background-size: 400%;
+}
+
+.pimg1 {
+  background-image: url('../src/assets/Images/png1.jpeg');
+  min-height: 100%;
+  position: relative;
+}
+
+.pimg1::after,
+.pimg2::after,
+.pimg3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pimg1 .grid {
+  z-index: 1;
+}
+
+.pimg1 h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px black;
+}
+
+.pimg1 p {
+  text-shadow: 3px 3px black;
+}
+
+.pimg2 {
+  background-image: url('../src/assets/Images/png2.jpeg');
+  min-height: 500px;
+}
+
+.pimg2 .grid {
+  z-index: 1;
+}
+
+.pimg2 .front {
+  text-shadow: 3px 3px black;
+}
+
+.pimg3 {
+  background-image: url('../src/assets/Images/png3.jpeg');
+  min-height: 500px;
+}
+
+.pimg3 .container div {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9),
+    #5c4c55,
+    #b4b4b0,
+    #af9a9a
+  );
+  background-size: 400%;
+}
+
+.pimg3 .container div:hover {
+  animation: animate 8s linear infinite;
+}
+
+.pimg3 .grid div {
+  z-index: 1;
+  text-shadow: 3px 3px black;
+}
+
+.last {
+  height: 30rem;
+}
+
+.last div {
+  z-index: 1;
+  font-size: 30px;
+  box-shadow: 15px 18px 44px #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.3),
+    #5c4c55,
+    #b4b4b0,
+    #af9a9a
+  );
+  background-size: 400%;
+}
+
+.last div:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 200%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+/* FLIP CARDS! */
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  transition: all ease-in-out 300ms;
+  transform: scale(0);
+}
+
+.back {
+  transition: all ease-in-out 300ms;
+  transform: scale(0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card:hover::before,
+.card:hover .back {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.front {
+  transition: all ease-in-out 300ms;
+}
+
+.card:hover .front {
+  opacity: 0;
+  transform-box: scale(0);
+}
+
+@media (max-width: 575px) {
+  .back {
+    font-size: 14px;
+  }
+
+  .card:nth-child(2) .back,
+  .card:nth-child(3) .back {
+    font-size: 12px;
+  }
+  .last div {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 675px) {
+  .desc {
+    top: 150px;
+  }
+  .desc h1 {
+    font-size: 4rem;
+  }
+  .desc p {
+    font-size: 1.5rem;
+  }
+}
