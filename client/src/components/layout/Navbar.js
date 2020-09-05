@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex justify-between flex-wrap bg-red-700 p-6'>
+    <nav className='navBar flex justify-between flex-wrap bg-red-700 p-6'>
       <div className='flex items-center flex-shrink-0 text-white mr-12'>
         <Link to='/'>
           <Logo />

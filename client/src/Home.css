@@ -1,6 +1,7 @@
 .showcase {
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 .showcase::after {
@@ -37,7 +38,6 @@
 }
 
 .desc p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   text-shadow: 3px 3px black;
 }
@@ -261,6 +261,16 @@ section {
   .desc h1 {
     font-size: 4rem;
   }
+  .desc p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .desc h1 {
+    font-size: 2rem;
+  }
+
   .desc p {
     font-size: 1.5rem;
   }

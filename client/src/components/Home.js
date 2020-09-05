@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Showcase from './layout/Showcase';
-import Article from './layout/Article';
+import Showcase from './content/Showcase';
+import Article from './content/Article';
 
 const Home = () => {
   return (
