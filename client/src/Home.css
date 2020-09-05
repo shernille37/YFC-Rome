@@ -242,15 +242,20 @@ section {
 
 @media (max-width: 575px) {
   .back {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .card:nth-child(2) .back,
-  .card:nth-child(3) .back {
-    font-size: 12px;
+  .card:nth-child(3) .back,
+  .card:nth-child(4) .back {
+    font-size: 14px;
   }
   .last div {
     font-size: 23px;
+  }
+
+  .desc p {
+    font-size: 1rem;
   }
 }
 
@@ -262,16 +267,6 @@ section {
     font-size: 4rem;
   }
   .desc p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .desc h1 {
-    font-size: 2rem;
-  }
-
-  .desc p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }

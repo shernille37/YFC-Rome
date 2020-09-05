@@ -28,7 +28,7 @@ const Carousel = () => {
           dotsDisabled
           className='carousel'
         />
-        <div className='text  container mx-auto p-4 w-full h-full absolute font-exo text-lg sm:text-2xl flex justify-center items-center sm:items-end'>
+        {/* <div className='text  container mx-auto p-4 w-full h-full absolute font-exo text-base md:text-2xl flex justify-center items-center sm:items-end'>
           <div className='mb-12 w-full xl:w-4/5 lg:w-4/5'>
             CFC-Youth for Christ is a ministry under the Couples for Christ
             Global Mission Foundation which unites people especially the youth
@@ -38,7 +38,7 @@ const Carousel = () => {
             vision articulated in the Youth for Christ community through gateway
             evangelization activities conducted in different areas worldwide.
           </div>
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );

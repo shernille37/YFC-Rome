@@ -24,7 +24,7 @@ const Article = () => {
       </section>
 
       <div className='pimg flex justify-start items-center py-4'>
-        <div className='text-white text-md md:text-2xl text-center font-exo'>
+        <div className='text-white text-base md:text-2xl text-center font-exo'>
           <div className='about p-6 mx-auto w-full lg:w-4/5 sm:rounded-lg sm:border-2 sm:border-solid sm:border-black'>
             CFC-Youth for Christ is a ministry under the Couples for Christ
             Global Mission Foundation which unites people especially the youth
@@ -93,25 +93,25 @@ const Article = () => {
 
       <div className='pimg3 py-32'>
         <div className='container mx-auto p-4 text-center grid grid-cols-4 gap-4 text-white font-exo'>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4'>
             Single-Minded for God
           </div>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
             Missionary
           </div>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
             Model of Excellence
           </div>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-3'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-3'>
             Champion of the Poor
           </div>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-1'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-1'>
             100% Free
           </div>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
             Source of Unity in the Family
           </div>
-          <div className='text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
+          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
             Patriotic
           </div>
         </div>
