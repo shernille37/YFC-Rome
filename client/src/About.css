@@ -1,3 +1,14 @@
+.About {
+  background: url('../src/assets/Images/white-bg.jpeg');
+  background-size: cover;
+}
+
+.aboutDesc img:hover {
+  transition: all ease-in-out 200ms;
+  transform: scale(1.1);
+}
+
+/* Carousel Image */
 .sliderImg {
   width: 100%;
   height: 525.5px;
@@ -19,8 +30,21 @@
   z-index: 1;
 }
 
-.text {
-  top: 0;
-  left: 0;
-  z-index: 2;
+/* ----HISTORY----- */
+
+@media (max-width: 1020px) {
+  .historyTitle {
+    background: url('./assets/Images/gray-bg.jpeg');
+    background-size: cover;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutDesc,
+  .historyDesc {
+    font-size: 12px;
+  }
+  .aboutDesc img {
+    width: 300px;
+  }
 }

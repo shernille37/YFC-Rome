@@ -44,19 +44,20 @@ const Navbar = () => {
           !isClicked ? 'hidden' : 'block'
         } lg:flex lg:items-center lg:w-auto`}
       >
-        <div className='text-sm md:flex-grow'>
+        <div className='text-sm md:flex-grow font-exo'>
+          <Link
+            to='/'
+            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
+          >
+            Home
+          </Link>
+
           <Link
             to='/about'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
           >
             About
           </Link>
-          <a
-            href='#responsive-header'
-            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
-          >
-            Examples
-          </a>
           <a
             href='#responsive-header'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'

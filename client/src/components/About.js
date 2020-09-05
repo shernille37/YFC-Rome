@@ -1,10 +1,16 @@
 import React, { Fragment } from 'react';
-import Carousel from './content/Carousel';
+import Carousel from './content/About/Carousel';
+import AboutDesc from './content/About/AboutDesc';
+import History from './content/About/History';
 
 const About = () => {
   return (
     <Fragment>
-      <Carousel />
+      <div className='About'>
+        <Carousel />
+        <AboutDesc />
+        <History />
+      </div>
     </Fragment>
   );
 };

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import theme from '../../assets/Images/yfc-theme.jpg';
+import theme from '../../../assets/Images/yfc-theme.jpg';
 
 const Article = () => {
   return (
