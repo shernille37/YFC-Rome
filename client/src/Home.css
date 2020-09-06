@@ -240,6 +240,10 @@ section {
 }
 
 @media (max-width: 575px) {
+  .showcase {
+    height: 500px;
+  }
+
   .pimg,
   .pimg1,
   .pimg2,
