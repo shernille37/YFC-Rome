@@ -56,10 +56,9 @@ const Article = () => {
 
           <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
             <div className='back absolute opacity-0 p-4'>
-              One can barely contain the enthusiasm of a spirit, within the YFC
-              community, the youth experience freedom from sins, from
-              insecurities, as well as the freedom to express love and to become
-              the individuals whom God meant to them.
+              Within the YFC community, the youth experience freedom from sins,
+              from insecurities, as well as the freedom to express love and to
+              become the individuals whom God meant to them.
             </div>
             <h1 className='front text-4xl font-exo'>Freedom</h1>
           </div>
