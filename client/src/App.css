@@ -1,6 +1,7 @@
 @import url('./Home.css');
 @import url('./About.css');
-@import url('https://fonts.googleapis.com/css?family=Exo+2|Allerta+Stencil');
+@import url('./Contacts.css');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Allerta+Stencil|Lobster');
 
 * {
   margin: 0;

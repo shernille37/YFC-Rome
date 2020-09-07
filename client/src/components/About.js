@@ -1,14 +1,20 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import Carousel from './content/About/Carousel';
 import AboutDesc from './content/About/AboutDesc';
 import History from './content/About/History';
+import Vision from './content/About/Vision';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'YFC Rome | About';
+  }, []);
+
   return (
     <Fragment>
       <div className='About'>
         <Carousel />
         <AboutDesc />
+        <Vision />
         <History />
       </div>
     </Fragment>

@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../../../assets/Images/yfc-logo.png';
+import logo from '../../../assets/Images/YFC/yfc-current-logo.jpg';
 
 const AboutDesc = () => {
   return (
     <div className='aboutDesc lg:container lg:mx-auto lg:p-4 grid gap-3 grid-cols-1 lg:grid-cols-2'>
       <div className='flex justify-center items-center p-4'>
-        <img src={logo} alt='YFC-Logo' />
+        <img src={logo} alt='YFC-Logo' width='350' />
       </div>
 
       <div className='flex justify-center md:text-lg text-center items-center p-4 font-exo'>

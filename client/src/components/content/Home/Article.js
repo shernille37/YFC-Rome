@@ -29,10 +29,7 @@ const Article = () => {
             CFC-Youth for Christ is a ministry under the Couples for Christ
             Global Mission Foundation which unites people especially the youth
             to engage in building relationships with other people globally and
-            to build oneness in spiritual faith. Our goal is to evangelize other
-            youths through our programs and to bring to life the mission and
-            vision articulated in the Youth for Christ community through gateway
-            evangelization activities conducted in different areas worldwide.
+            to build oneness in spiritual faith.
           </div>
         </div>
       </div>
@@ -117,7 +114,9 @@ const Article = () => {
       </div>
 
       <section className='p-4 text-center'>
-        <h1 className='four text-4xl font-exo'>EPHESIANS 5: 8 – 9, 14</h1>
+        <h1 className='four text-lg md:text-4xl font-exo'>
+          EPHESIANS 5: 8 – 9, 14
+        </h1>
       </section>
 
       <div className='text-white text-center last pimg1 flex justify-start items-center font-exo'>

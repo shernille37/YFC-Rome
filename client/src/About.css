@@ -3,6 +3,10 @@
   background-size: cover;
 }
 
+.aboutDesc img {
+  border-radius: 50%;
+}
+
 .aboutDesc img:hover {
   transition: all ease-in-out 200ms;
   transform: scale(1.1);
@@ -32,19 +36,24 @@
 
 /* ----HISTORY----- */
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .historyTitle {
     background: url('./assets/Images/gray-bg.jpeg');
     background-size: cover;
   }
+
+  .aboutDesc img {
+    width: 300px;
+  }
 }
 
 @media (max-width: 575px) {
-  .aboutDesc,
-  .historyDesc {
-    font-size: 12px;
-  }
   .aboutDesc img {
-    width: 300px;
+    width: 200px;
+  }
+
+  .visionDesc {
+    height: 300px;
+    text-shadow: #fff 2px 2px;
   }
 }

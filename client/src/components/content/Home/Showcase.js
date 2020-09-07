@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import background from '../../../assets/Images/yfc-rome.jpg';
+import background from '../../../assets/Images/vatican.jpg';
 
 const Showcase = () => {
   return (

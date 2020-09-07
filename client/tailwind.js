@@ -278,6 +278,7 @@ module.exports = {
       ],
       exo: ['"Exo 2"'],
       allerta: ['"Allerta Stencil"'],
+      lobster: ['Lobster'],
     },
     fontSize: {
       xs: '0.75rem',

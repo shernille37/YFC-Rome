@@ -58,12 +58,12 @@ const Navbar = () => {
           >
             About
           </Link>
-          <a
-            href='#responsive-header'
+          <Link
+            to='/contacts'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'
           >
-            Contacts
-          </a>
+            Contact Us
+          </Link>
         </div>
       </div>
     </nav>

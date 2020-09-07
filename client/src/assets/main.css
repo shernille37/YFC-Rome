@@ -10079,6 +10079,10 @@ video {
   font-family: "Allerta Stencil";
 }
 
+.font-lobster {
+  font-family: Lobster;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -28154,6 +28158,10 @@ video {
     font-family: "Allerta Stencil";
   }
 
+  .sm\:font-lobster {
+    font-family: Lobster;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -46197,6 +46205,10 @@ video {
 
   .md\:font-allerta {
     font-family: "Allerta Stencil";
+  }
+
+  .md\:font-lobster {
+    font-family: Lobster;
   }
 
   .md\:font-hairline {
@@ -64244,6 +64256,10 @@ video {
     font-family: "Allerta Stencil";
   }
 
+  .lg\:font-lobster {
+    font-family: Lobster;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -82287,6 +82303,10 @@ video {
 
   .xl\:font-allerta {
     font-family: "Allerta Stencil";
+  }
+
+  .xl\:font-lobster {
+    font-family: Lobster;
   }
 
   .xl\:font-hairline {

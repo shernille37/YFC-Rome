@@ -1,0 +1,40 @@
+.Contacts {
+  background: url('./assets/Images/white-bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactShowcase {
+  position: relative;
+  height: 525.5px;
+  background: url('./assets/Images/yfc-rome.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contactShowcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contactShowcase p {
+  font-size: 7rem;
+  z-index: 2;
+}
+
+@media (max-width: 675px) {
+  .contactShowcase {
+    height: 525px;
+  }
+
+  .contactShowcase p {
+    font-size: 4rem;
+  }
+}
