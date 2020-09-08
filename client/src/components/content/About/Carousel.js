@@ -29,7 +29,6 @@ const Carousel = () => {
           touchTrackingEnabled
           buttonsDisabled
           dotsDisabled
-          className='carousel'
         />
       </div>
     </Fragment>
