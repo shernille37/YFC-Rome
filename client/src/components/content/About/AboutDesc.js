@@ -13,7 +13,7 @@ const AboutDesc = () => {
 
     const annotateStyle = {
       animationDuration: 3000,
-      padding: 8,
+      padding: 6.5,
       multiline: true,
       iterations: 2,
     };
@@ -41,7 +41,7 @@ const AboutDesc = () => {
         data-aos='flip-up'
         data-aos-offset='200'
         data-aos-delay='50'
-        data-aos-duration='1000'
+        data-aos-duration='500'
         data-aos-easing='ease-in-out'
       >
         <img src={logo} alt='YFC-Logo' width='350' />

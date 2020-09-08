@@ -49,19 +49,18 @@ const YFCMembers = () => {
 
   return (
     <Fragment>
-      <div>
+      <div
+        data-aos='zoom-in'
+        data-aos-offset='200'
+        data-aos-delay='50'
+        data-aos-duration='500'
+        data-aos-easing='ease-in-out'
+      >
         <p className='membersTitle text-center h-10 sm:h-auto text-2xl md:text-4xl lg:text-5xl font-allerta'>
           YFC Rome Coordinators
         </p>
         <div className='coordinators container grid grid-cols-1 md:grid-cols-2 gap-4 p-6'>
-          <div
-            className='flex justify-center items-center'
-            data-aos='zoom-in'
-            data-aos-offset='200'
-            data-aos-delay='50'
-            data-aos-duration='700'
-            data-aos-easing='ease-in-out'
-          >
+          <div className='flex justify-center items-center'>
             <img
               src={coordinators}
               alt='Coordinators'
