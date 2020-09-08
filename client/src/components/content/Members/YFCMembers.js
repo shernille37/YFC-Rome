@@ -15,30 +15,35 @@ const YFCMembers = () => {
       type: 'Chapter Head',
       name: 'Andrei Gatmaitan',
       img: andrei,
+      aos: 'fade-in',
     },
     {
       id: 2,
       type: 'Chapter Head',
       name: 'Chiara Trinidad',
       img: chiara,
+      aos: 'slide-right',
     },
     {
       id: 3,
       type: 'Household Head',
       name: 'Mary Marcelo',
       img: mary,
+      aos: 'zoom-in-up',
     },
     {
       id: 4,
       type: 'Household Head',
       name: 'Shernille Licud',
       img: jersey,
+      aos: 'fade-down',
     },
     {
       id: 5,
       type: 'Household Head',
       name: 'Jessica Guevarra',
       img: jessica,
+      aos: 'flip-down',
     },
   ];
 
@@ -49,7 +54,14 @@ const YFCMembers = () => {
           YFC Rome Coordinators
         </p>
         <div className='coordinators container grid grid-cols-1 md:grid-cols-2 gap-4 p-6'>
-          <div className='flex justify-center items-center'>
+          <div
+            className='flex justify-center items-center'
+            data-aos='zoom-in'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='700'
+            data-aos-easing='ease-in-out'
+          >
             <img
               src={coordinators}
               alt='Coordinators'
@@ -58,7 +70,7 @@ const YFCMembers = () => {
             />
           </div>
           <div className='flex justify-center items-center'>
-            <p className='text-2xl sm:text-4xl font-exo'>
+            <p className='text-2xl sm:text-4xl font-exo text-center'>
               Freidrich | Cheng Navales
             </p>
           </div>

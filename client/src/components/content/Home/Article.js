@@ -13,7 +13,14 @@ const Article = () => {
             </p>
           </div>
 
-          <div className='p-4 flex justify-center items-center'>
+          <div
+            className='p-4 flex justify-center items-center'
+            data-aos='slide-left'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out'
+          >
             <img
               src={theme}
               alt='Logo'
@@ -30,7 +37,14 @@ const Article = () => {
 
       <div className='pimg flex justify-start items-center py-4'>
         <div className='text-white text-base md:text-2xl text-center font-exo'>
-          <div className='about p-6 mx-auto w-full lg:w-4/5 sm:rounded-lg sm:border-2 sm:border-solid sm:border-black'>
+          <div
+            className='about p-6 mx-auto w-full lg:w-4/5 sm:rounded-lg sm:border-2 sm:border-solid sm:border-black'
+            data-aos='fade-in'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='500'
+            data-aos-easing='ease-in-out'
+          >
             CFC-Youth for Christ is a ministry under the Couples for Christ
             Global Mission Foundation which unites people especially the youth
             to engage in building relationships with other people globally and
