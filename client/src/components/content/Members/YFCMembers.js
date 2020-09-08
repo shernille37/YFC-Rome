@@ -76,7 +76,14 @@ const YFCMembers = () => {
         </div>
       </div>
       <div>
-        <p className='membersTitle text-center h-10 sm:h-auto text-2xl md:text-4xl lg:text-5xl font-allerta'>
+        <p
+          className='membersTitle text-center h-10 sm:h-auto text-2xl md:text-4xl lg:text-5xl font-allerta'
+          data-aos='zoom-in'
+          data-aos-offset='200'
+          data-aos-delay='50'
+          data-aos-duration='500'
+          data-aos-easing='ease-in-out'
+        >
           YFC Rome Heads
         </p>
 
