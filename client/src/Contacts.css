@@ -29,12 +29,27 @@
   z-index: 2;
 }
 
-@media (max-width: 675px) {
+.socialMedias {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+@media (max-width: 575px) {
   .contactShowcase {
     height: 525px;
   }
 
+  .Socials {
+    height: 300px;
+  }
+
   .contactShowcase p {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Socials {
+    height: 300px;
   }
 }

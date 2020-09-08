@@ -14,7 +14,12 @@ const Article = () => {
           </div>
 
           <div className='p-4 flex justify-center items-center'>
-            <img src={theme} alt='Logo' width='300' className='rounded-lg' />
+            <img
+              src={theme}
+              alt='Logo'
+              width='300'
+              className='yfcTheme rounded-lg'
+            />
           </div>
         </div>
       </div>

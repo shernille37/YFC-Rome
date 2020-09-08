@@ -9,7 +9,7 @@ const Vision = () => {
         </div>
 
         <div className='visionDesc flex justify-center text-4xl md:text-6xl text-center items-center p-4 font-lobster'>
-          Being and Bringing Christ wherever they are
+          Being and Bringing Christ wherever we are
         </div>
       </div>
     </Fragment>

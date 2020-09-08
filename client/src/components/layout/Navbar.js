@@ -59,6 +59,12 @@ const Navbar = () => {
             About
           </Link>
           <Link
+            to='/members'
+            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
+          >
+            Members
+          </Link>
+          <Link
             to='/contacts'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'
           >

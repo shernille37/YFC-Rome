@@ -1,0 +1,48 @@
+.Members {
+  background: url('./assets/Images/white-bg.jpeg');
+  background-size: cover;
+}
+
+.membersShowcase {
+  position: relative;
+  height: 525.5px;
+  background: url('./assets/Images/YFC/yfcImg2.jpg');
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.membersShowcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.membersShowcase p {
+  z-index: 1;
+}
+
+.membersTitle {
+  background: url('./assets/Images/gray-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.iconImg {
+  border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+  .membersShowcase {
+    height: 400px;
+  }
+
+  .coordinators img {
+    width: 200px;
+  }
+}

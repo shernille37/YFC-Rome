@@ -221,7 +221,10 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true,
+      padding: '2rem',
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -291,6 +294,9 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '7xl': '5rem',
+      '8xl': '6rem',
+      '9xl': '7rem',
     },
     fontWeight: {
       hairline: '100',
