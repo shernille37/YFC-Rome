@@ -13,7 +13,6 @@ import ricka from '../../../assets/Images/YFC/Heads/Ricka.jpg';
 import gina from '../../../assets/Images/YFC/Heads/Carriza.jpg';
 import angelica from '../../../assets/Images/YFC/Heads/Angelica.jpg';
 import kathlyn from '../../../assets/Images/YFC/Heads/Kathlyn.jpg';
-import kathreen from '../../../assets/Images/YFC/Heads/Kathreen.jpg';
 import mika from '../../../assets/Images/YFC/Heads/Mika.jpg';
 import waki from '../../../assets/Images/YFC/Heads/Waki.jpg';
 import mj from '../../../assets/Images/YFC/Heads/MJ.jpg';
@@ -57,7 +56,6 @@ const ImgGallery = () => {
     gina,
     angelica,
     kathlyn,
-    kathreen,
     mika,
     waki,
     mj,
@@ -79,7 +77,6 @@ const ImgGallery = () => {
     'Gina Tanedo',
     'Angelica Ubaldo',
     'Kathlyn Fabian',
-    'Kathreen Magsino',
     'Mikaela Paner',
     'Joseph Wakin Ubaldo',
     'Michael Josh De Torres',

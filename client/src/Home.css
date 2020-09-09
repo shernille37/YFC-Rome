@@ -149,10 +149,6 @@ section {
   background-size: 400%;
 }
 
-.pimg3 .container div:hover {
-  animation: animate 8s linear infinite;
-}
-
 .pimg3 .grid div {
   z-index: 1;
   text-shadow: 3px 3px black;

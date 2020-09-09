@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import FourEf from './FourEf';
+import Identities from './Identities';
 import theme from '../../../assets/Images/yfc-theme.jpg';
 
 const Article = () => {
@@ -15,7 +17,7 @@ const Article = () => {
 
           <div
             className='p-4 flex justify-center items-center'
-            data-aos='slide-left'
+            data-aos='zoom-in'
             data-aos-offset='200'
             data-aos-delay='50'
             data-aos-duration='1000'
@@ -53,84 +55,10 @@ const Article = () => {
         </div>
       </div>
 
-      <section className='text-center p-4'>
-        <h1 className='text-xl sm:text-4xl font-allerta'>
-          Youth for Christ <span className='four'>4 F's</span>
-        </h1>
-      </section>
-
-      <div className='pimg2 flex text-white justify-center items-center'>
-        <div className='four-ef w-full h-full px-6 py-6 text-center grid lg:grid-cols-2 md:grid-cols-1 gap-2'>
-          <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
-            <div className='back absolute opacity-0 p-4'>
-              Being young means having fun.YFC promotes and supports the
-              dynamism of the youth's thirst to the fullest. YFC encourages fun
-              - good, clean fun.
-            </div>
-            <h1 className='front text-4xl font-exo'>Fun</h1>
-          </div>
-
-          <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
-            <div className='back absolute opacity-0 p-4'>
-              Within the YFC community, the youth experience freedom from sins,
-              from insecurities, as well as the freedom to express love and to
-              become the individuals whom God meant to them.
-            </div>
-            <h1 className='front text-4xl font-exo'>Freedom</h1>
-          </div>
-          <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
-            <div className='back absolute opacity-0 p-4'>
-              This is the time of their lives when the youth begin to form long
-              lasting relationships with their peers. YFC encourages friendship
-              among young people, enabling them to see God in every individual
-              they encounter.
-            </div>
-            <h1 className='front text-4xl font-exo'>Friendship</h1>
-          </div>
-
-          <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
-            <div className='back absolute opacity-0 p-4'>
-              None of the three can be fully experienced without the faith in
-              God. In YFC, the youth are taught the catholic faith that they may
-              better appreciate the abundant blessings they receive in their
-              lives.
-            </div>
-            <h1 className='front text-4xl font-exo'>Faith</h1>
-          </div>
-        </div>
-      </div>
-
-      <section className='p-4'>
-        <h1 className='four text-center text-xl sm:text-4xl font-allerta'>
-          SEVEN IDENTITIES
-        </h1>
-      </section>
-
-      <div className='pimg3 py-32'>
-        <div className='container mx-auto p-4 text-center grid grid-cols-4 gap-4 text-white font-exo'>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4'>
-            Single-Minded for God
-          </div>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
-            Missionary
-          </div>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
-            Model of Excellence
-          </div>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-3'>
-            Champion of the Poor
-          </div>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-1'>
-            100% Free
-          </div>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
-            Source of Unity in the Family
-          </div>
-          <div className='text-2xl md:text-4xl rounded-lg p-10 border-2 border-solid border-black  text-center flex justify-center items-center col-span-4 sm:col-span-2'>
-            Patriotic
-          </div>
-        </div>
-      </div>
+      {/* Youth for Christ 4 F's */}
+      <FourEf />
+      {/* Youth for ChristSEVEN IDENTITIES  */}
+      <Identities />
 
       <section className='p-4 text-center'>
         <h1 className='four text-lg md:text-4xl font-exo'>

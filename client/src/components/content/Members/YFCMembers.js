@@ -7,6 +7,7 @@ import chiara from '../../../assets/Images/YFC/Heads/Chiara.jpg';
 import mary from '../../../assets/Images/YFC/Heads/Mary.jpg';
 import jersey from '../../../assets/Images/YFC/Heads/Jersey.jpg';
 import jessica from '../../../assets/Images/YFC/Heads/Jessica.jpg';
+import kathreen from '../../../assets/Images/YFC/Heads/Kathreen.jpg';
 
 const YFCMembers = () => {
   const membersInfo = [
@@ -26,10 +27,10 @@ const YFCMembers = () => {
     },
     {
       id: 3,
-      type: 'Household Head',
-      name: 'Mary Marcelo',
-      img: mary,
-      aos: 'zoom-in-up',
+      type: 'YCOM Head',
+      name: 'Kathreen Magsino',
+      img: kathreen,
+      aos: 'zoom-in',
     },
     {
       id: 4,
@@ -40,6 +41,13 @@ const YFCMembers = () => {
     },
     {
       id: 5,
+      type: 'Household Head',
+      name: 'Mary Marcelo',
+      img: mary,
+      aos: 'zoom-in-up',
+    },
+    {
+      id: 6,
       type: 'Household Head',
       name: 'Jessica Guevarra',
       img: jessica,
