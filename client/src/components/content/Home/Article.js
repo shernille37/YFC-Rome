@@ -56,9 +56,9 @@ const Article = () => {
       </div>
 
       {/* Youth for Christ 4 F's */}
-      <FourEf />
+      <FourEf key={12345} />
       {/* Youth for ChristSEVEN IDENTITIES  */}
-      <Identities />
+      <Identities key={54321} />
 
       <section className='p-4 text-center'>
         <h1 className='four text-lg md:text-4xl font-exo'>

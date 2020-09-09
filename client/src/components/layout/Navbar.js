@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/Images/Logo';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isClicked, setClicked] = useState(false);
+  const [isTop, setPosition] = useState(true);
 
   const openCollapse = () => {
     if (!isClicked) {
@@ -13,16 +13,31 @@ const Navbar = () => {
     }
   };
 
-  return (
-    <nav className='navBar flex justify-between flex-wrap bg-red-700 p-6'>
-      <div className='flex items-center flex-shrink-0 text-white mr-12'>
-        <Link to='/'>
-          <Logo />
-        </Link>
+  window.onscroll = () => {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      setPosition(false);
+    } else {
+      setPosition(true);
+    }
+  };
 
-        <Link to='/' className='font-semibold text-2xl tracking-tight'>
+  return (
+    <nav
+      className={`navBar flex justify-between flex-wrap p-6 fixed z-10 w-full bg-red-700 ${
+        !isTop ? 'bg-opacity-75' : ''
+      }`}
+    >
+      <div className='flex items-center flex-shrink-0 text-white mr-12'>
+        <a href='/'>
+          <Logo />
+        </a>
+
+        <a href='/' className='font-semibold text-2xl tracking-tight'>
           Youth for Christ
-        </Link>
+        </a>
       </div>
       <div className='block lg:hidden mt-2'>
         <button
@@ -45,35 +60,35 @@ const Navbar = () => {
         } lg:flex lg:items-center lg:w-auto`}
       >
         <div className='text-sm md:flex-grow font-exo'>
-          <Link
-            to='/'
+          <a
+            href='/'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
             onClick={() => setClicked(false)}
           >
             Home
-          </Link>
+          </a>
 
-          <Link
-            to='/about'
+          <a
+            href='/about'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
             onClick={() => setClicked(false)}
           >
             About
-          </Link>
-          <Link
-            to='/members'
+          </a>
+          <a
+            href='/members'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
             onClick={() => setClicked(false)}
           >
             Members
-          </Link>
-          <Link
-            to='/contacts'
+          </a>
+          <a
+            href='/contacts'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'
             onClick={() => setClicked(false)}
           >
             Contact Us
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
