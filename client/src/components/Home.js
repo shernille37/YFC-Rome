@@ -5,6 +5,7 @@ import Article from './content/Home/Article';
 const Home = () => {
   useEffect(() => {
     document.title = 'Youth for Christ | Rome';
+    window.scrollTo(0, 0);
   }, []);
 
   return (

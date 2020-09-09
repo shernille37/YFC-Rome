@@ -6,6 +6,7 @@ import SocialMedias from './content/Contacts/SocialMedias';
 const Contacts = () => {
   useEffect(() => {
     document.title = 'YFC Rome | Contacts';
+    window.scrollTo(0, 0);
   }, []);
 
   return (

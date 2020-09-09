@@ -7,6 +7,7 @@ import Vision from './content/About/Vision';
 const About = () => {
   useEffect(() => {
     document.title = 'YFC Rome | About';
+    window.scrollTo(0, 0);
   }, []);
 
   return (
