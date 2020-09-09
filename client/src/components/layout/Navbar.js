@@ -48,6 +48,7 @@ const Navbar = () => {
           <Link
             to='/'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
+            onClick={() => setClicked(false)}
           >
             Home
           </Link>
@@ -55,18 +56,21 @@ const Navbar = () => {
           <Link
             to='/about'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
+            onClick={() => setClicked(false)}
           >
             About
           </Link>
           <Link
             to='/members'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
+            onClick={() => setClicked(false)}
           >
             Members
           </Link>
           <Link
             to='/contacts'
             className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'
+            onClick={() => setClicked(false)}
           >
             Contact Us
           </Link>
