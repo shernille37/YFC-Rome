@@ -6,7 +6,7 @@ const Members = () => {
   useEffect(() => {
     document.title = 'YFC Rome | Members';
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <Fragment>
