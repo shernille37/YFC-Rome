@@ -23,7 +23,7 @@ const YFCMembers = () => {
       type: 'Chapter Head',
       name: 'Chiara Trinidad',
       img: chiara,
-      aos: 'slide-right',
+      aos: 'fade-in',
     },
     {
       id: 3,
@@ -44,14 +44,14 @@ const YFCMembers = () => {
       type: 'Household Head',
       name: 'Mary Marcelo',
       img: mary,
-      aos: 'zoom-in-up',
+      aos: 'zoom-in',
     },
     {
       id: 6,
       type: 'Household Head',
       name: 'Jessica Guevarra',
       img: jessica,
-      aos: 'flip-down',
+      aos: 'fade-in',
     },
   ];
 
