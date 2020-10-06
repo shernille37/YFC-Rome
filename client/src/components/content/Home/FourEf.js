@@ -38,10 +38,12 @@ const FourEf = () => {
       <div className='pimg2 flex text-white justify-center items-center'>
         <div className='four-ef w-full h-full px-6 py-6 text-center grid lg:grid-cols-2 md:grid-cols-1 gap-2'>
           {fouref.map((ef) => (
-            <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
-              <div className='back absolute opacity-0 p-4'>{ef.desc}</div>
-              <h1 className='front text-4xl font-exo'>{ef.title}</h1>
-            </div>
+            <Fragment key={ef.id}>
+              <div className='card w-full relative p-10 rounded-lg border-2 border-black border-solid'>
+                <div className='back absolute opacity-0 p-4'>{ef.desc}</div>
+                <h1 className='front text-4xl font-exo'>{ef.title}</h1>
+              </div>
+            </Fragment>
           ))}
         </div>
       </div>
