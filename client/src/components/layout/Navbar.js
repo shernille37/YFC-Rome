@@ -25,10 +25,12 @@ const Navbar = () => {
     }
   };
 
+  //  ${
+  //   !isTop ? 'fixed bg-opacity-75' : 'static'}
   return (
     <nav
-      className={`navBar flex justify-between flex-wrap p-6  z-10 w-full bg-red-700 ${
-        !isTop ? 'fixed bg-opacity-75' : 'static'
+      className={`navBar flex justify-between flex-wrap p-6 fixed top-0 z-10 w-full bg-red-700 ${
+        !isTop ? 'bg-opacity-75' : ''
       }`}
     >
       <div className='flex items-center flex-shrink-0 text-white mr-12'>

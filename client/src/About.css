@@ -1,6 +1,7 @@
 .About {
   background: url('../src/assets/Images/white-bg.jpeg');
   background-size: cover;
+  margin-top: 90px;
 }
 
 .aboutDesc img {
