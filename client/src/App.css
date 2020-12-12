@@ -11,3 +11,9 @@
   line-height: 1.5;
   letter-spacing: 3px;
 }
+
+@media (max-width: 575px) {
+  nav {
+    background-color: rgba(185, 28, 28, 1) !important;
+  }
+}

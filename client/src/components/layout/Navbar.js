@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/Images/Logo';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isClicked, setClicked] = useState(false);
   const [isTop, setPosition] = useState(true);
+  const [forceRender, setForceRender] = useState(0);
+
+  const pathName = window.location.pathname;
+
+  useEffect(() => {
+    setClicked(false);
+  }, [forceRender]);
+
+  // -- OPEN COLLAPSE FUNCTION -- //
 
   const openCollapse = () => {
     if (!isClicked) {
@@ -13,6 +22,8 @@ const Navbar = () => {
       setClicked(false);
     }
   };
+
+  // -- WINDOW ONSCROLL FUNCTION -- //
 
   window.onscroll = () => {
     if (
@@ -25,12 +36,16 @@ const Navbar = () => {
     }
   };
 
-  //  ${
-  //   !isTop ? 'fixed bg-opacity-75' : 'static'}
   return (
     <nav
-      className={`navBar flex justify-between flex-wrap p-6 fixed top-0 z-10 w-full bg-red-700 ${
-        !isTop ? 'bg-opacity-75' : ''
+      className={`navBar flex justify-between flex-wrap p-6 fixed top-0 z-10 w-full transition-colors duration-500 ease-in-out ${
+        pathName === '/'
+          ? isTop
+            ? 'bg-transparent'
+            : 'bg-red-700 bg-opacity-75'
+          : isTop
+          ? 'bg-red-700'
+          : 'bg-red-700 bg-opacity-75'
       }`}
     >
       <div className='flex items-center flex-shrink-0 text-white mr-12'>
@@ -38,7 +53,11 @@ const Navbar = () => {
           <Logo />
         </Link>
 
-        <Link to='/' className='font-semibold text-2xl tracking-tight'>
+        <Link
+          to='/'
+          className='font-semibold text-2xl tracking-tight'
+          onClick={() => setForceRender(forceRender + 1)}
+        >
           Youth for Christ
         </Link>
       </div>
@@ -62,33 +81,33 @@ const Navbar = () => {
           !isClicked ? 'hidden' : 'block'
         } lg:flex lg:items-center lg:w-auto`}
       >
-        <div className='text-sm md:flex-grow font-exo'>
+        <div className='text-sm md:flex-grow font-exo text-white'>
           <Link
             to='/'
-            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
-            onClick={() => setClicked(false)}
+            className='text-lg block mt-4 lg:inline-block lg:mt-0 mr-6 lg:mr-12 text-center hover:text-black'
+            onClick={() => setForceRender(forceRender + 1)}
           >
             Home
           </Link>
 
           <Link
             to='/about'
-            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
-            onClick={() => setClicked(false)}
+            className='text-lg block mt-4 lg:inline-block lg:mt-0 mr-6 lg:mr-12 text-center hover:text-black'
+            onClick={() => setForceRender(forceRender + 1)}
           >
             About
           </Link>
           <Link
             to='/members'
-            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-6 lg:mr-12 text-center'
-            onClick={() => setClicked(false)}
+            className='text-lg block mt-4 lg:inline-block lg:mt-0 mr-6 lg:mr-12 text-center hover:text-black'
+            onClick={() => setForceRender(forceRender + 1)}
           >
             Members
           </Link>
           <Link
             to='/contacts'
-            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white text-center'
-            onClick={() => setClicked(false)}
+            className='text-lg block mt-4 lg:inline-block lg:mt-0 text-center hover:text-black'
+            onClick={() => setForceRender(forceRender + 1)}
           >
             Contact Us
           </Link>
